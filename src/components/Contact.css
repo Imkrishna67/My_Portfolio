@@ -1,0 +1,67 @@
+/* ============ CONTACT ============ */
+
+#contact { background: var(--bg-secondary); padding: 90px 5%; }
+
+.contact-container { max-width: 1100px; margin: 0 auto; }
+
+.section-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+  margin-top: -2rem;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact info cards */
+
+/* Contact info cards */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-card);
+  border-radius: var(--lg);
+  border: 1px solid var(--border);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  border-radius: var(--md);
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--normal);
+}
+.contact-item:hover .contact-icon { transform: scale(1.08); }
+.contact-icon svg { color: #fff; }
+
+.contact-item h4 { font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.2rem; }
+.contact-item p { font-size: 0.88rem; color: var(--text-tertiary); margin: 0; }
+
+/* Social links full-card */
+.contact-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contact-content { gap: 2rem; }
+}

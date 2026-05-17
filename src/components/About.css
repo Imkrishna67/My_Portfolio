@@ -1,0 +1,110 @@
+/* ============ ABOUT ============ */
+
+#about { background: var(--bg-primary); padding: 90px 5%; }
+
+.about-container { max-width: 1100px; margin: 0 auto; }
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+
+.about-text { flex: 1; }
+
+.about-text p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Stat cards ---- */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  background: var(--bg-card);
+  border-radius: var(--lg);
+  border: 1px solid var(--border);
+  transition: all var(--normal);
+}
+.stat:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-number {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.35rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ---- Image ---- */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.about-img-placeholder {
+  width: 260px;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--border-hover);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  transition: transform var(--slow), box-shadow var(--slow);
+}
+.about-img-placeholder:hover {
+  transform: scale(1.04);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(88, 166, 255, 0.2);
+}
+
+.about-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about-content { flex-direction: column; align-items: center; gap: 2.5rem; }
+  .about-text { text-align: center; }
+  .about-stats { grid-template-columns: 1fr; max-width: 260px; gap: 0.85rem; }
+}
+
+@media (max-width: 480px) {
+  .about-img-placeholder { width: 200px; height: 200px; }
+}
