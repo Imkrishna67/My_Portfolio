@@ -65,6 +65,55 @@
 
 .skill-name { color: var(--text-secondary); }
 
+.approach-box {
+  background: var(--bg-card);
+  border-radius: var(--lg);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.approach-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.approach-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.approach-text strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tags span {
+  background: var(--bg-accent);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .skills-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
 }

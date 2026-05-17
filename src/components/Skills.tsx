@@ -62,6 +62,13 @@ const Skills = () => {
             </div>
           ))}
         </div>
+
+        <div className="approach-box">
+          <h3 className="approach-title">My Approach</h3>
+          <p className="approach-text">
+            My core expertise lies in modern full-stack web development using the <strong><span className="highlight">MERN</span></strong> stack, including <strong><span className="highlight">MongoDB</span></strong>, <strong><span className="highlight">Express.js</span></strong>, <strong><span className="highlight">React.js</span></strong>, and <strong><span className="highlight">Node.js</span></strong>. I specialize in building scalable and high-performance applications with a strong emphasis on clean architecture, reusable components, and efficient system design. I follow best coding practices to ensure maintainable and optimized solutions, with a focus on delivering reliable, <strong>production-ready user experiences</strong>.
+          </p>
+        </div>
       </div>
     </section>
   )
