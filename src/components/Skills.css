@@ -115,5 +115,8 @@
 }
 
 @media (max-width: 768px) {
-  .skills-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .skills-grid { grid-template-columns: 1fr; max-width: 100%; margin: 0; }
+  .skill-category { padding: 1.25rem; }
+  .approach-box { padding: 1.25rem; }
+  .approach-text { font-size: 0.9rem; }
 }

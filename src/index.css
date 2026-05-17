@@ -8,6 +8,7 @@
   --bg-secondary: #0f1319;
   --bg-card: #161b22;
   --bg-card-hover: #1a2030;
+  --bg-accent: rgba(88, 166, 255, 0.08);
   --bg-body-overlay: rgba(99, 102, 241, 0.03);
   --border: #21262d;
   --border-hover: #30363d;
@@ -22,6 +23,7 @@
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #58a6ff 0%, #bc8cff 100%);
   --gradient-hero: linear-gradient(160deg, #0b0d13 0%, #0d1117 60%, #100c1a 100%);
+  --gradient-home: linear-gradient(160deg, #0b0d13 0%, #0d1117 80%, #100c1a 100%);
 
   /* Shadows */
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -44,12 +46,13 @@
   --pill: 999px;
 }
 
-/* ========== LIGHT THEME ========== */
+/* Light Theme */
 [data-theme="light"] {
   --bg-primary: #f6f8fa;
   --bg-secondary: #ffffff;
   --bg-card: #ffffff;
   --bg-card-hover: #f3f4f6;
+  --bg-accent: rgba(88, 166, 255, 0.08);
   --bg-body-overlay: rgba(88, 166, 255, 0.03);
   --border: #d0d7de;
   --border-hover: #afb8c1;
@@ -80,6 +83,12 @@
   scrollbar-color: var(--accent) var(--bg-secondary);
 }
 
+.App {
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -95,6 +104,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* Subtle background ring glow */
 body::before {
   content: '';
@@ -107,6 +121,14 @@ body::before {
     radial-gradient(ellipse 500px 350px at 85% 100%, rgba(188, 140, 255, 0.035), transparent);
 }
 
+@media (max-width: 768px) {
+  body::before {
+    background:
+      radial-gradient(ellipse 400px 300px at 15% 0%, rgba(88, 166, 255, 0.04), transparent),
+      radial-gradient(ellipse 300px 200px at 85% 100%, rgba(188, 140, 255, 0.035), transparent);
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 7px; }
 ::-webkit-scrollbar-track { background: transparent; }
@@ -117,6 +139,13 @@ section {
   padding: 90px 5%;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -131,6 +160,11 @@ a {
 }
 
 img { max-width: 100%; max-height: 100%; }
+
+@media (max-width: 480px) {
+  .section-title { font-size: clamp(1.5rem, 5vw, 1.8rem) !important; }
+  .section-subtitle { font-size: 0.9rem !important; }
+}
 
 input, textarea, button {
   font-family: inherit;

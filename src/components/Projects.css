@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 768px) {
-  .projects-grid { gap: 1.25rem; }
+  .projects-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .project-card { padding: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+  .section-title { font-size: clamp(1.5rem, 5vw, 1.8rem) !important; }
 }

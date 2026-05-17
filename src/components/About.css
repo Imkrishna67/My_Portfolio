@@ -76,7 +76,6 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  margin-top: -100px;
 }
 
 .about-img-placeholder {
@@ -104,8 +103,13 @@
   .about-content { flex-direction: column; align-items: center; gap: 2.5rem; }
   .about-text { text-align: center; }
   .about-stats { grid-template-columns: 1fr; max-width: 260px; gap: 0.85rem; }
+  .about-image { margin-top: 0; }
 }
 
 @media (max-width: 480px) {
   .about-img-placeholder { width: 200px; height: 200px; }
+}
+
+@media (max-width: 400px) {
+  .about-img-placeholder { width: 170px; height: 170px; }
 }

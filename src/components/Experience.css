@@ -110,4 +110,11 @@
     margin-right: 0;
     text-align: left;
   }
+  
+  .exp-title { font-size: 1rem; }
+  .exp-description { font-size: 0.85rem; }
+}
+
+@media (max-width: 480px) {
+  .section-title { font-size: clamp(1.5rem, 5vw, 1.8rem) !important; }
 }
