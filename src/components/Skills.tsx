@@ -1,38 +1,42 @@
 import './Skills.css'
+import { 
+  SiReact, SiNextdotjs, SiTailwindcss, SiJavascript, SiHtml5, SiTypescript,
+  SiNodedotjs, SiExpress, SiMongodb, SiMysql, SiGraphql, SiPostgresql,
+  SiGithub, SiVercel, SiJsonwebtokens, SiPrisma, SiCss
+} from 'react-icons/si'
 
 const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'Next.js', level: 85 },
-        { name: 'JavaScript', level: 90 },
-        { name: 'TypeScript', level: 80 },
-        { name: 'HTML/CSS', level: 95 },
+        { name: 'React.js', icon: <SiReact /> },
+        { name: 'Next.js', icon: <SiNextdotjs /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+        { name: 'JavaScript', icon: <SiJavascript /> },
+        { name: 'HTML5', icon: <SiHtml5 /> },
+        { name: 'CSS3', icon: <SiCss /> },
+        { name: 'TypeScript', icon: <SiTypescript /> }
       ]
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
-        { name: 'REST API', level: 85 },
-      ]
-    },
-    {
-      title: 'Database',
-      skills: [
-        { name: 'MongoDB', level: 75 },
-        { name: 'PostgreSQL', level: 70 },
+        { name: 'Node.js', icon: <SiNodedotjs /> },
+        { name: 'Express.js', icon: <SiExpress /> },
+        { name: 'MongoDB', icon: <SiMongodb /> },
+        { name: 'MySQL', icon: <SiMysql /> },
+        { name: 'GraphQL', icon: <SiGraphql /> },
+        { name: 'PostgreSQL', icon: <SiPostgresql /> }
       ]
     },
     {
       title: 'Tools & Others',
       skills: [
-        { name: 'Git', level: 85 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 65 },
+        { name: 'Git & GitHub', icon: <SiGithub /> },
+        { name: 'JWT & Clerk', icon: <SiJsonwebtokens /> },
+        { name: 'Vercel', icon: <SiVercel /> },
+        { name: 'Prisma ORM', icon: <SiPrisma /> }
       ]
     }
   ]
@@ -50,16 +54,8 @@ const Skills = () => {
               <div className="skills-list">
                 {category.skills.map((skill, idx) => (
                   <div key={idx} className="skill-item">
-                    <div className="skill-info">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percent">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-progress" 
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    <span className="skill-icon">{skill.icon}</span>
+                    <span className="skill-name">{skill.name}</span>
                   </div>
                 ))}
               </div>

@@ -56,36 +56,14 @@
 
 .skills-list { display: flex; flex-direction: column; gap: 1.1rem; }
 
-.skill-item { display: flex; flex-direction: column; gap: 0.5rem; }
+.skill-item { display: flex; align-items: center; gap: 0.75rem; }
 
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.88rem;
-  font-weight: 500;
+.skill-icon {
+  font-size: 1.25rem;
+  color: var(--accent);
 }
 
 .skill-name { color: var(--text-secondary); }
-.skill-percent {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
-  color: var(--accent);
-  font-size: 0.8rem;
-}
-
-.skill-bar {
-  height: 5px;
-  background: rgba(88, 166, 255, 0.08);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-primary);
-  border-radius: 3px;
-  transition: width 1s var(--ease-out);
-}
 
 @media (max-width: 768px) {
   .skills-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
