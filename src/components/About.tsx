@@ -7,34 +7,23 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <div className="about-text">
-            <p>
-              I'm a passionate Full Stack Web Developer with expertise in building 
-              modern web applications. I specialize in React, Next.js, and Node.js, 
-              creating seamless user experiences with robust backend architectures.
-            </p>
-            <p>
-              With a strong foundation in both frontend and backend technologies, 
-              I enjoy turning complex problems into simple, beautiful, and intuitive 
-              solutions. My goal is to build applications that are not only functional 
-              but also provide exceptional user experiences.
-            </p>
-            <p>
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or sharing knowledge with the 
-              developer community.
-            </p>
+          <p>
+            I am a dedicated Full Stack Web Developer with a strong passion for designing and building modern, scalable, and high-performance web applications. I specialize in the MERN stack, leveraging MongoDB, Express.js, React, and Node.js to develop seamless, responsive, and efficient digital solutions with well-structured architectures.
+          </p>
+          <p>
+            With a solid foundation in both frontend and backend development, I focus on creating clean, maintainable, and scalable codebases that translate complex requirements into intuitive and user-centric applications. I take pride in delivering solutions that balance functionality, performance, and design precision, ensuring an optimal user experience across all devices.
+          </p>
+          <p>
+            My approach to development is driven by continuous learning, problem-solving, and attention to detail. I actively explore emerging technologies and best practices to enhance my technical expertise and stay aligned with industry standards. Beyond development, I engage with the tech community, contribute to open-source initiatives, and continuously work on improving my skills to build impactful and production-ready software solutions.
+          </p>
             <div className="about-stats">
               <div className="stat">
                 <span className="stat-number">5+</span>
                 <span className="stat-label">Projects Completed</span>
               </div>
               <div className="stat">
-                <span className="stat-number">2+</span>
+                <span className="stat-number">Fresher</span>
                 <span className="stat-label">Years Experience</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">100%</span>
-                <span className="stat-label">Client Satisfaction</span>
               </div>
             </div>
           </div>

@@ -23,13 +23,6 @@ const Projects = () => {
       github: 'https://github.com/Imkrishna67',
       live: '#',
     },
-    {
-      title: 'Blog Platform',
-      description: 'A full-featured blog platform with markdown support, categories, and user comments. Built with performance and SEO in mind.',
-      tech: ['React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com/Imkrishna67',
-      live: '#',
-    },
   ]
 
   return (

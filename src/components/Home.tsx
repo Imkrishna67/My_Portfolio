@@ -8,7 +8,7 @@ const Home = () => {
           <h1 className="home-name">HARI KRISHNA AGARWAL</h1>
           <h2 className="home-title">Full Stack Web Developer</h2>
           <p className="home-description">
-            Building modern full-stack web applications using React, Next.js & Node.js
+            I design and develop end-to-end web applications that are fast, scalable, and maintainable, with a strong focus on performance, usability, and clean architecture. I specialize in building robust digital solutions using the MERN stack, transforming ideas into reliable, production-ready products with modern development practices and attention to detail.
           </p>
            <div className="home-buttons">
              <a href="#projects" className="btn btn-primary">
