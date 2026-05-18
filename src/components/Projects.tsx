@@ -2,13 +2,13 @@ import './Projects.css'
 
 const Projects = () => {
   const projects = [
-    {
-      title: 'E-Commerce Website',
-      description: 'Full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, and payment integration.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      github: 'https://github.com/Imkrishna67',
-      live: '#',
-    },
+     {
+        title: 'Next‑Hire',
+        description: 'A recruitment platform that streamlines hiring workflows with role-based dashboards, structured evaluations, and clear candidate pipelines — built for speed and clarity.',
+       tech: ['Next.js', 'TypeScript', 'Prisma', 'Clerk'],
+       github: 'https://github.com/Imkrishna67',
+       live: '#',
+     },
     {
       title: 'Task Management App',
       description: 'A responsive task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
