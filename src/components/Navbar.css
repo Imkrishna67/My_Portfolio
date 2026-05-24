@@ -112,6 +112,29 @@
   transform: rotate(35deg);
 }
 
+/* Desktop theme toggle - visible on desktop */
+.desktop-theme {
+  display: inline-flex;
+}
+
+/* Mobile theme toggle - visible in mobile menu */
+.mobile-theme {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-theme {
+    display: none;
+  }
+  
+  .mobile-theme {
+    display: inline-flex;
+    margin: 0 auto 1rem;
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* ---- Mobile Hamburger ---- */
 .nav-toggle {
   display: none;
