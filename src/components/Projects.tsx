@@ -2,24 +2,24 @@ import './Projects.css'
 
 const Projects = () => {
   const projects = [
-     {
-        title: 'Next‑Hire',
-        description: 'A recruitment platform that streamlines hiring workflows with role-based dashboards, structured evaluations, and clear candidate pipelines — built for speed and clarity.',
-       tech: ['Next.js', 'TypeScript', 'Prisma', 'Clerk'],
-       github: 'https://github.com/Imkrishna67',
-       live: '#',
-     },
-    {
-      title: 'Task Management App',
-      description: 'A responsive task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      github: 'https://github.com/Imkrishna67',
-      live: '#',
-    },
+{
+         title: 'Next‑Hire',
+         description: 'A recruitment platform that streamlines hiring workflows with role-based dashboards, structured evaluations, and clear candidate pipelines — built for speed and clarity.',
+        tech: ['Next.js', 'TypeScript', 'Prisma', 'Clerk'],
+        github: 'https://github.com/Imkrishna67/Next-Hire-Smart-Job-Portal-',
+        live: 'https://next-hire-pearl.vercel.app/',
+      },
+{
+         title: 'Expense Tracker',
+         description: 'Full Stack Expense Tracker web app built using React.js, Node.js, Express.js, and MongoDB with JWT authentication, transaction management, analytics dashboard, and responsive UI. Deployed on Vercel with MongoDB Atlas integration.',
+         tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'TypeScript'],
+         github: 'https://github.com/Imkrishna67/Expense_Tracking',
+         live: 'https://expense-tracking-flame.vercel.app/',
+       },
     {
       title: 'Portfolio Website',
       description: 'Personal portfolio website showcasing projects and skills, built with modern web technologies and responsive design.',
-      tech: ['React', 'CSS', 'Vite'],
+      tech: ['React.js', 'CSS', 'Vite'],
       github: 'https://github.com/Imkrishna67',
       live: '#',
     },

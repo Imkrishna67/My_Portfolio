@@ -15,48 +15,32 @@
 }
 
 /* ---- Timeline ---- */
-.timeline { position: relative; padding: 1rem 0; }
+.timeline { }
 
-/* Center line */
+/* Remove center line for single item */
 .timeline::before {
-  content: '';
-  position: absolute;
-  top: 0; bottom: 0;
-  width: 2px;
-  background: var(--gradient-primary);
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.5;
-  border-radius: 1px;
+  display: none;
 }
 
-.timeline-item { position: relative; margin-bottom: 2.5rem; }
+.timeline-item { position: relative; margin-bottom: 0; }
 
-/* Dot on center line */
+/* Remove dot for single item */
 .timeline-item::after {
-  content: '';
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  background: var(--accent);
-  border: 2px solid var(--bg-secondary);
-  border-radius: 50%;
-  top: 1.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  display: none;
 }
 
-/* Content card */
+/* Content card - full width */
 .timeline-content {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--lg);
-  padding: 1.5rem;
+  padding: 1.75rem;
   box-shadow: var(--shadow-xs);
   transition: all var(--normal);
   position: relative;
   overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Top accent line on hover */
@@ -73,9 +57,13 @@
 .timeline-content:hover { border-color: var(--border-hover); box-shadow: var(--shadow-sm); transform: translateY(-3px); }
 .timeline-content:hover::before { transform: scaleX(1); }
 
-/* Left / right layout */
-.timeline-item.left .timeline-content  { margin-right: 52%; text-align: right; }
-.timeline-item.right .timeline-content { margin-left: 52%; text-align: left;  }
+/* Left / right layout - single item uses full width */
+.timeline-item.left .timeline-content,
+.timeline-item.right .timeline-content {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
 
 .exp-title {
   font-family: 'Space Grotesk', sans-serif;
