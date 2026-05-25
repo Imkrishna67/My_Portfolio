@@ -14,7 +14,7 @@ const Home = () => {
               <a href="#projects" className="btn btn-primary">
                 View Projects
               </a>
-              <a href="/Resume.pdf" className="btn btn-secondary" download>
+              <a href="https://drive.google.com/file/d/1xMJ18ziSm4wvDKDxPTADAFqlZODKcjVs/view?usp=sharing" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
             </div>
